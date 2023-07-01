@@ -1,0 +1,22 @@
+.card{
+    border: none;
+    width: 350px;
+    background-color: #ECF4FF;
+}
+.form-control{
+    border-radius: 10px;
+    border: 2px solid #1C887B;
+}
+.btn{
+    border-radius: 10px;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ECF4FF;
+ }
+ .help{
+    color:#3D6A8C;
+}

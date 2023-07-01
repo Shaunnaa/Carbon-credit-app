@@ -68,15 +68,13 @@ body{
 .d-grid{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding-top: 0px;
     gap: 31px;
-    
-    position: absolute;
     width: 283px;
     height: 167px;
-    left: 74px;
-    top: 567px;
+    margin: auto;
+    margin-top: 50px;
 }
 
 .btn btn-info{

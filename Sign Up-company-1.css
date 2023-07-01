@@ -5,6 +5,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.card{
+    border: none;
+    width: 500px;
     background-color: #ECF4FF;
 }
 
@@ -28,11 +33,9 @@ body{
     height: 50px;
     background: #FFFFFF;
     border: 2px solid #1C887B;
-    border-radius: 20px;
+    border-radius: 20px !important;
     text-align: left;
     text-decoration-color: #365E7D;
-    margin-top: 12px;
-    margin-bottom: 12px;
 }
 
 .email{
@@ -40,9 +43,7 @@ body{
     box-sizing: border-box;
     background: #FFFFFF;
     border: 2px solid #1C887B;
-    border-radius: 20px;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    border-radius: 20px !important;
     text-decoration-color: #365E7D;
 }
 
@@ -53,10 +54,8 @@ body{
     box-sizing: border-box;
     background: #FFFFFF;
     border: 2px solid #1C887B;
-    border-radius: 20px;
+    border-radius: 20px !important;
     text-decoration-color: #365E7D;
-    margin-top: 12px;
-    margin-bottom: 35px;
 }
 
 .next{

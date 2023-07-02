@@ -1,0 +1,65 @@
+body{
+    background-color: #ECF4FF;
+    margin: 0px;
+}
+
+.location{
+    position: absolute;
+
+    height: 61px;
+    left: 71px;
+    top: 167px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 61px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.group1{
+    gap: 7px;
+}
+
+.baan{
+    box-sizing: border-box;
+    position: absolute;
+    width: 137px;
+    height: 64px;
+    left: 35px;
+    top: 285px;
+
+    background: #FFFFFF;
+    border: 2px solid #1C887B;
+    border-radius: 20px;
+}
+
+.moo{
+    position: absolute;
+    width: 101px;
+    height: 64px;
+    left: 179px;
+    top: 285px;
+    
+    background: #FFFFFF;
+    border: 2px solid #1C887B;
+    border-radius: 20px;
+    
+}
+
+.build{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 108px;
+    height: 64px;
+    left: 288px;
+    top: 285px;
+    
+    background: #FFFFFF;
+    border: 2px solid #1C887B;
+    border-radius: 20px;
+}

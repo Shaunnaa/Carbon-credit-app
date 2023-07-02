@@ -60,14 +60,17 @@ body{
     font-weight: 600;
     font-size: 40px;
     line-height: 48px;
-
+    width: 200px;
     text-align: center;
     align-items: center;
     color: #1C887B;
+    margin: 0 auto;
+    display: block;
 }
 
 .help2{
 
+    padding-top: 20px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;

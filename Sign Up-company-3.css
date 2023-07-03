@@ -1,9 +1,3 @@
-@media only screen and (max-width: 400px) {
-    #Create_Name{
-        font-size: 40px !important;
-    } 
-}
-
 body{
     background-color: #ECF4FF;
     margin: 0px;
@@ -34,7 +28,7 @@ body{
     padding-bottom: 27px;
     
 }
-.username{
+.pass{
     box-sizing: border-box;
     height: 50px;
     background: #FFFFFF;
@@ -44,16 +38,9 @@ body{
     text-decoration-color: #365E7D;
 }
 
-.email{
-    height: 50px;
-    box-sizing: border-box;
-    background: #FFFFFF;
-    border: 2px solid #1C887B;
-    border-radius: 20px !important;
-    text-decoration-color: #365E7D;
-}
 
-.tel{
+
+.con{
     height: 50px;
     left: 474px;
     top: 561px;

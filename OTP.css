@@ -2,6 +2,7 @@
     border: none;
     width: 350px;
     background-color: #ECF4FF;
+    
 }
 .form-control{
     border-radius: 10px;
@@ -19,4 +20,16 @@ body{
  }
  .help{
     color:#3D6A8C;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }

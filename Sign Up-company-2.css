@@ -16,7 +16,6 @@ body{
 .location{
     padding-top: 100px;
     padding-bottom: 27px;
-    height: 61px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -82,10 +81,12 @@ body{
     font-weight: 600;
     font-size: 40px;
     line-height: 48px;
-
+    width: 200px;
     text-align: center;
     align-items: center;
     color: #1C887B;
+    margin: 0 auto;
+    display: block;
 }
 
 .help2{

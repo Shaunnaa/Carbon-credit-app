@@ -7,41 +7,12 @@
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="Create-acc.css">
       <script src="js/bootstrap.min.js"></script>
-      <script>
-        function showText(text) {
-          document.getElementById("text-first").innerText = text;
-
-          var company = document.getElementById("company");
-          var individual = document.getElementById("individual");
-
-          if (text === "ระดับบริษัท, องค์กร, ธุรกิจทุกขนาด") {
-            company.style.backgroundColor = "#1C887B";
-            company.style.color = "#FFFFFF";
-            individual.style.backgroundColor = "#FFFFFF";
-            individual.style.color = "#000000";
-          } else if (text === "ระดับบุคคล, ครอบครัว, ครัวเรือน") {
-            company.style.backgroundColor = "#FFFFFF";
-            company.style.color = "#000000";
-            individual.style.backgroundColor = "#1C887B";
-            individual.style.color = "#FFFFFF";
-          }
-        }
-
-        function Nextpage() {
-          var companySelected = document.getElementById("company").style.backgroundColor === "rgb(28, 136, 123)"; //#1C887B
-          if (companySelected) {
-            window.location.href = "Sign Up-company-1.html";
-          } else {
-            window.location.href = "Sign Up-company-2.html";
-          }
-        }
-      </script>
   </head>
 
   <body>
     <div class="container-fluid">
       <div class="image-container">
-        <img class="img" src='./photo/skyscrapers 1.png'><img>
+        <img id="img" class="img" src='./photo/skyscrapers-1.png'><img>
         <p id="text-first" class="text-first">ระดับบริษัท, องค์กร, ธุรกิจทุกขนาด </p>
       </div>
     </div>
@@ -52,10 +23,44 @@
         <div class="d-grid">
           <button id="company" class="company" onclick="showText('ระดับบริษัท, องค์กร, ธุรกิจทุกขนาด')">แบบบริษัท</button>
           <button id="individual" class="individual" onclick="showText('ระดับบุคคล, ครอบครัว, ครัวเรือน')">แบบบุคคล</button>
-                
           <button class="next" onclick="Nextpage()">ต่อไป ></button>
         </div>
       </div>
     </div>
   </body>
+
+  <script>
+    function showText(text) {
+      document.getElementById("text-first").innerText = text;
+
+      var company = document.getElementById("company");
+      var individual = document.getElementById("individual");
+
+      if (text === "ระดับบริษัท, องค์กร, ธุรกิจทุกขนาด") {
+        company.style.backgroundColor = "#1C887B";
+        company.style.color = "#FFFFFF";
+        individual.style.backgroundColor = "#FFFFFF";
+        individual.style.color = "#000000";
+        document.getElementById("img").src = "./photo/skyscrapers-1.png";
+      } else if (text === "ระดับบุคคล, ครอบครัว, ครัวเรือน") {
+        company.style.backgroundColor = "#FFFFFF";
+        company.style.color = "#000000";
+        individual.style.backgroundColor = "#1C887B";
+        individual.style.color = "#FFFFFF";
+        document.getElementById("img").src = "./photo/profile-1.png";
+      }
+    }
+
+    function Nextpage() {
+      var companySelected = document.getElementById("company").style.backgroundColor === "rgb(28, 136, 123)"; //#1C887B
+      if (companySelected) {
+        window.location.href = "Sign Up-company-1.html";
+      } else {
+        window.location.href = "Sign Up-company-2.html";
+      }
+    }
+  </script>
+
+
+
 </html>

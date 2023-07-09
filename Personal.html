@@ -5,9 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="OTP.css" rel="stylesheet">
+    <link href="Personal.css" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="container min-vh-100 d-flex justify-content-center align-items-center">
+        <div class="login mb-5">
+           <div class="confirm mb-5 text-center">
+               <p class="fs-1">สร้างบัญชีบุคคล</p>
+           </div>
+           <form>
+           <div class="input-group-lg mb-5 mt-4 align-items-center">
+               <input type="text" class="form-control mb-4" placeholder="ชื่อผู้ใช้">
+               <input type="email" class="form-control mb-4" placeholder="อีเมล" >
+               <input type="password" class="form-control mb-4" placeholder="ตั้งรหัสผ่าน" >
+               <input type="password" class="form-control mb-4" placeholder="ยืนยันรหัสผ่าน" >
+           </div>
+           <div class="d-grid gap-2 col-4 mx-auto mb-4">
+            <a  type="submit" href="OTP.html" class="btn btn-success" >สร้างบัญชี</a>
+          </div>
+          <div class="help text-center">
+            <a class="nav-link" style="color: rgb(99, 99, 99);" href="Changepassword.html">ต้องการความช่วยเหลือ?</a>
+          </div>
+           </form>
+        </div>
+   </div>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

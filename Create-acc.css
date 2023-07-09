@@ -1,16 +1,30 @@
+@media only screen and (max-width: 800px) {
+   .img{
+       width: 30% !important;
+   }
+
+   .text-first{
+      font-size: 30px !important;
+   }
+
+   .account {
+      font-size: 40px !important;
+   }
+}
+
 body{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #1C887B;
+   background-color: #1C887B;
  }
- .row{
-    display: flex;
+ 
+.container-fluid{
+   padding: 0px;
+   margin-top: 20px;
+}
+
+.image-container {
+   display: flex;
+   align-items: center;
  }
  .text-first{
     font-size:100px;
- }
- .picture{
-   width: 233px;
  }

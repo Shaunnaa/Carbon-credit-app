@@ -22,14 +22,13 @@ body{
     line-height: 61px;
     text-align: center;
     color: #000000;
-    margin-bottom: 15px;
 }
 .input-group-lg {
     padding-top: 27px;
     padding-bottom: 27px;
     
 }
-.pass{
+.email{
     box-sizing: border-box;
     height: 50px;
     background: #FFFFFF;
@@ -41,7 +40,7 @@ body{
 
 
 
-.con{
+.tel{
     height: 50px;
     left: 474px;
     top: 561px;
@@ -53,30 +52,32 @@ body{
 }
 
 .next{
+        
+    background: #1C887B;
+    border-radius: 20px !important;
 
-    background-color: #ECF4FF;
-    border: none;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 40px;
     line-height: 48px;
-    width: 200px;
     text-align: center;
-    align-items: center;
-    color: #1C887B;
-    margin: 0 auto;
-    display: block;
+    color: #FFFFFF;
 }
 
-.help2{
-
-    padding-top: 20px;
+.f{
+    padding-top: 25px;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 36px;
     text-align: center;
+    border: none;
+    background-color: #ECF4FF;
     color: #3D6A8C;
+
 }
+
+
+

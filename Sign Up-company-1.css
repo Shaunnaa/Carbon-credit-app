@@ -1,6 +1,6 @@
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
     #Create_Name{
-        font-size: 40px !important;
+        font-size: 45px !important;
     } 
 }
 
@@ -20,14 +20,14 @@ body{
 }
 
 .text-center{
-    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 50px;
+    font-size: 60px;
     line-height: 61px;
     text-align: center;
     color: #000000;
+    margin-bottom: 15px;
 }
 .input-group-lg {
     padding-top: 27px;

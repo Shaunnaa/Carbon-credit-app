@@ -3,7 +3,7 @@
     
 }
 .navbar-nav {
-    align-items: center;
+    align-items: start;
 }
 
 .menu-navbar {
@@ -28,6 +28,15 @@ ul{
     border-radius: 20px;
     border: 2px solid #1C887B;
     background: #FFF;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item .Nav-img {
+    margin-right: 10px !important;
 }
 
 .amount {

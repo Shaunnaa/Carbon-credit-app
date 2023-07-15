@@ -51,7 +51,8 @@ color: #1C887B;
 }
 .card{
     background: #ECF4FF;
-    border-radius: 50px;
+   
+    border-radius: none;
     
 }
 .quantity{

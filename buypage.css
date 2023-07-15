@@ -35,7 +35,9 @@ border: 2px solid #1C887B;
 border-radius: 20px;
 
 }
-
+.img{
+    align-items: center;
+}
 .connect-text{
     font-family: 'Inter';
     font-style: normal;
@@ -58,7 +60,7 @@ border-radius: 20px;
     background-color:rgb(19, 80, 80);}
 
 
-.btn-lg{
+.btn{
     background: #1C887B;
-    border-radius: 20px;
+    border-radius: 15px;
 }

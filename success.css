@@ -1,0 +1,110 @@
+.col1{
+    border-left: none ;
+    
+    border-top: none;
+    border-bottom: none;
+    border-color: aqua;
+}
+.customer-personal{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+
+color: #1C887B;
+}
+.name,.phone,.email{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+color: #1C887B;
+}
+.name-input,.phone-input,.email-input{
+    background: #FFFFFF;
+border: 2px solid #1C887B;
+border-radius: 10px;
+}
+body{
+    background: #87B3DA;
+}
+.order{
+    color: white
+}
+.carbon{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+
+color: #1C887B;
+}
+.card-body{
+    border: none;
+}
+.col{
+    border: none;
+}
+.card{
+    background: #ECF4FF;
+   
+    border-radius: none;
+    
+}
+.quantity{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+text-align: right;
+
+color: #1C887B;
+}
+.price{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 36px;
+color: #1C887B;
+}
+.howtopay{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 36px;
+text-align: center;
+
+color: #1C887B;
+}
+.pricebaht{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+
+color: #1C887B;
+}
+.create{
+    align-items: center;
+      width: 150px;
+      height: 50px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 36px;
+      text-align: center;
+      color: #000000;
+      border-radius: 20px;
+      border-color: #1C887B;
+      align-items: center;
+}

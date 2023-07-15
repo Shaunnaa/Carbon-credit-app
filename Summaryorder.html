@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Summaryorder.css">
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container justify-content-center align-items-center">
+        <h1 class="order text-center mt-5 mb-5">สั่งซื้อสินค้า</h1>
+        <div class="card py-5 px-3">
+            
+                <div class="row">
+                <div class="col-sm">
+                    <div class="col-sm-20 card py-5 px-3">
+                        <h5 class="customer-personal text-center mb-5">ข้อมูลลูกค้า</h5>
+                        <h5 class="name">ชื่อผู้ซื้อ</h5>
+                        <input type="text" class="name-input" placeholder="Name Lastname                                              ID: xxxxx" >
+                        <br>
+                        <h5 class="phone">เบอร์โทรศัพท์</h5>
+                        <input type="number" class="phone-input" placeholder="0x-xxx-xxxx" >
+                        <br>
+                        <h5 class="email">อีเมล</h5>
+                        <input type="email" class="email-input" placeholder="********@gmail.com" >
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="col-sm-20 card py-5 px-3">
+                        <h5 class="customer-personal text-center mb-3">รายการสินค้า</h5>
+                        <h5 class="quantity text-right mb-3">จำนวน (kg CO2e)</h5>
+                        
+                        <h5 class="carbon text-left mb-2">ซื้อ Carbon Credit</h5>
+                        <hr class="hr hr-blurry " />
+                        <div class="price1 d-flex">
+                            <h5 class="price text-left">ราคา</h5>
+                            <h5 class="price text-right">บาท</h5>
+                        </div>
+                        <hr class="hr hr-blurry" />
+                        <h5 class="howtopay mb-2">วิธีการชำระเงิน</h5>
+                        <input type="text" class="name-input" placeholder="PromptPay" >
+                    </div>
+                </div>
+            </div>
+            <div class="d-grid gap-2 col-2 mt-4 mx-auto">
+                <a  href="success.html" class="btn btn-success" type="submit">ยืนยัน</a>
+              </div>
+        </div>
+    </div>
+</body>
+</html>

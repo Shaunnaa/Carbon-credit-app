@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <meta charset="utf-8">
+    <link href="../Shop/Navbar.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -13,30 +14,135 @@
 </head>
 
 <body>
-    <div class="container justify-content-center align-items-center">
-        <h1 class="order text-center mt-5 mb-5">สั่งซื้อสำเร็จ</h1>
-        <div class="card text-center py-5 px-2 ">
-            
-                 <h5 class="customer-personal text-center mb-3 mr-4">รายการสินค้า</h5>
-                 <h5 class="quantity text-right mb-3">จำนวน (kg CO2e)</h5>
-                        
-                <h5 class="carbon text-left mb-2">ซื้อ Carbon Credit</h5>
-                        <hr class="hr hr-blurry " />
-                        <div class="price1 d-flex">
-                            <h5 class="price text-left">ราคา</h5>
-                            <h5 class="price text-right">บาท</h5>
-                        </div>
-                        <hr class="hr hr-blurry" />
-                        <h5 class="howtopay mb-2">วิธีการชำระเงิน</h5>
-                        <input type="text" class="name-input" placeholder="PromptPay" >
-                        <h5 class="howtopay mb-2">ขอบพระคุณค่ะ</h5>
-                   
-            
-            <div class="d-grid gap-2 col-2 mt-4 mx-auto">
-                <a  href="OTP.html" class="btn btn-success" type="submit">เสร็จสิ้น</a>
-              </div>
-            </div>
-    </div>
+    <section>
+        <header class="header sticky-top" id="myHeader">
+            <!-- Navbar -->
+            <nav class="navbar navbar-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler order-first" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <img class="logo" src='../photo/Logo.png'><img> 
+
+                    <div class="menu-navbar " id="navbarSupportedContent"> 
+                        <ul class="navbar ms-auto">
+                            <li class="nav-item mx-4">
+                                <a class="nav-link active" style="color: rgb(0, 0, 0);" aria-current="page" href="">เกี่ยวกับเรา</a>
+                            </li>
+                            <li class="nav-item mx-4">
+                                <a class="nav-link" style="color: rgb(0, 0, 0);" href="">ข่าวสาร</a>
+                            </li>
+                            <li class="nav-item mx-4">
+                                <a class="nav-link" style="color: rgb(0, 0, 0);" href="">เกียรติบัตร</a>
+                            </li>
+                            <li class="nav-item mx-4">
+                                <a class="nav-link" style="color: rgb(0, 0, 0);" href="">ติดต่อเรา</a>
+                            </li>
+
+                            <div class="card-body">
+                                <img class="Leaf_img" src='../photo/Leaf.png'><img>
+                                <b class="amount">100 </b>
+                                <b class="unit">kg CO2e </b>
+                                <img class="Profile_img" src='../photo/Profile.png'><img>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <!--Show when click open navbar-toggler-->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item mx-4">
+                                <img class="Nav-img" src='../photo/user-2 1.png'><img>
+                                <a class="nav-link active" style="color: rgb(0, 0, 0);" aria-current="page" href="">บัญชี</a>
+                            </li>
+                            <hr>
+                            <li class="nav-item mx-4">
+                                <img class="Nav-img" src='../photo/file 1.png'><img>
+                                <a class="nav-link" style="color: rgb(0, 0, 0);" href="">ประวัติการสั่งซื้อ/ขาย/โอน</a>
+                            </li>
+                            <hr>
+                            <li class="nav-item mx-4">
+                                <img class="Nav-img" src='../photo/balance 1.png'><img>
+                                <a class="nav-link" style="color: rgb(0, 0, 0);" href="">ธนาคาร</a>
+                            </li>
+                            <hr>
+                            <li class="nav-item mx-4">
+                                <img class="Nav-img" src='../photo/certificate 1.png'><img>
+                                <a class="nav-link" style="color: rgb(0, 0, 0);" href="">ดาวน์โหลดเกียรติบัตร</a>
+                            </li>
+                            <hr>
+                            <li class="nav-item mx-4">
+                                <img class="Nav-img" src='../photo/setting 1.png'><img>
+                                <a class="nav-link" style="color: rgb(0, 0, 0);" href="">การตั้งค่า</a>
+                            </li>
+                            <hr>
+                        </ul>
+
+                        <!-- Use this code when screen less than 1400px -->
+                         <ul class="navbar-nav-function ms-auto"> 
+                            <li class="nav-item mx-4">
+                                <a class="nav-link active" style="color: rgb(0, 0, 0);" aria-current="page" href="">เกี่ยวกับเรา</a>
+                            </li>
+                            <hr>
+                            <li class="nav-item mx-4">
+                                <a class="nav-link" style="color: rgb(0, 0, 0);" href="">ข่าวสาร</a>
+                            </li>
+                            <hr>
+                            <li class="nav-item mx-4">
+                                <a class="nav-link" style="color: rgb(0, 0, 0);" href="">เกียรติบัตร</a>
+                            </li>
+                            <hr>
+                            <li class="nav-item mx-4">
+                                <a class="nav-link" style="color: rgb(0, 0, 0);" href="">ติดต่อเรา</a>
+                            </li>
+                            <hr>
+
+                            <div class="card-body d-flex justify-content-center">
+                                <img class="Leaf_img" src='../photo/Leaf.png'><img>
+                                <b class="amount">100 </b>
+                                <b class="unit">kg CO2e </b>
+                                <img class="Profile_img" src='../photo/Profile.png'><img>
+                            </div>
+                        </ul>
+                        <!-- End-Use this code when screen less than 1400px -->
+                    </div>
+                    <!--End-Show when click open navbar-toggler-->
+                </div>
+            </nav>
+        <!--End-Navbar-->   
+        </header>
+    </section>
+    <section>
+        <div class="container justify-content-center align-items-center">
+            <h1 class="order text-center mt-5 mb-5">สั่งซื้อสำเร็จ</h1>
+            <div class="card text-center py-5 px-2 align-items-center">
+                <div class="container gap-4">
+                     <h5 class="customer-personal text-center mb-3 mr-4">รายการสินค้า</h5>
+                     <h5 class="quantity text-right mb-3">จำนวน (kg CO2e)</h5>
+                            
+                    <h5 class="carbon text-left mb-2">ซื้อ Carbon Credit</h5>
+                            <hr class="hr hr-blurry " />
+                            <div class="price1 d-flex">
+                                <h5 class="price text-left">ราคา</h5>
+                                <h5 class="price text-right">บาท</h5>
+                            </div>
+                            <hr class="hr hr-blurry" />
+                            <h5 class="howtopay mb-2">วิธีการชำระเงิน</h5>
+                            <input type="text" class="name-input" placeholder="PromptPay" >
+                            <h5 class="howtopay mb-2">ขอบพระคุณค่ะ</h5>
+                       
+                </div>
+                     
+                
+                <div class=" gap-2 col-2 mt-4 mx-auto d-flex">
+                    <a  href="OTP.html" class="class1 btn btn-success " type="submit">ดาวโหลดเกียรติบัตร</a>
+                    <a  href="OTP.html" class="class btn btn-success " type="submit">เสร็จสิ้น</a>
+                    
+                  </div>
+                </div>
+        </div>
+    </section>
     
 </body>
 </html>

@@ -9,7 +9,7 @@ body{
 
 .card{
     border: none;
-    width: 500px;
+    width: 100%;
     background-color: #ECF4FF;
 }
 
@@ -55,16 +55,20 @@ body{
         
     background: #1C887B;
     border-radius: 20px !important;
-
+    align-content: center;
+    align-items: center;
+    align-self: center;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 20px;
     line-height: 48px;
     text-align: center;
     color: #FFFFFF;
 }
-
+.img{
+    width:100%;
+}
 .f{
     padding-top: 25px;
     font-family: 'Inter';
@@ -78,6 +82,11 @@ body{
     color: #3D6A8C;
 
 }
-
+@media only screen and (max-device-width: 414px) {
+    .img {
+    display: none;
+     
+    }
+  }
 
 

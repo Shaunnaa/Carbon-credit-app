@@ -5,7 +5,9 @@
     justify-content: center;
     background-color: #87B3DA;
  }
-
+body{
+    background-color: #87B3DA;
+}
 .div{
     display: flex;
 }

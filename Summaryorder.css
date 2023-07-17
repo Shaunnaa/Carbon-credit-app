@@ -64,6 +64,9 @@ text-align: right;
 
 color: #1C887B;
 }
+.price1{
+    justify-content: space-between;
+}
 .price{
     font-family: 'Inter';
 font-style: normal;

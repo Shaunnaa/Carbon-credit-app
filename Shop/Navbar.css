@@ -26,9 +26,11 @@ ul{
 
 .card-body {
     border-radius: 20px;
-    border: 2px solid #1C887B;
+    border: 2px solid #1C887B !important;
     background: #FFF;
 }
+
+
 
 .nav-item {
     display: flex;

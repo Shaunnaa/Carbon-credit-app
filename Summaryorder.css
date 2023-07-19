@@ -29,7 +29,7 @@ border: 2px solid #1C887B;
 border-radius: 10px;
 }
 body{
-    background: #87B3DA;
+    background: #87B3DA !important;
 }
 .order{
     color: white
@@ -44,14 +44,14 @@ line-height: 30px;
 color: #1C887B;
 }
 .card-body{
-    border: none;
+    border: none !important;
 }
 .col{
-    border: none;
+    border: none !important;
 }
 .card{
-    background: #ECF4FF;
-    border-radius: 50px;
+    background: #ECF4FF !important;
+    border-radius: 50px !important;
     
 }
 .quantity{
@@ -63,6 +63,9 @@ line-height: 24px;
 text-align: right;
 
 color: #1C887B;
+}
+.price1{
+    justify-content: space-between;
 }
 .price{
     font-family: 'Inter';

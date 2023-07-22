@@ -1,0 +1,145 @@
+.col1{
+    border-left: none ;
+    
+    border-top: none;
+    border-bottom: none;
+    border-color: aqua;
+}
+.customer-personal{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 36px;
+text-align: left;
+
+color: #1C887B;
+}
+.name,.phone,.email{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+color: #1C887B;
+}
+.name-input,.phone-input,.email-input{
+    background: #FFFFFF;
+border: 2px solid #1C887B;
+border-radius: 10px;
+}
+body{
+    background:  #E08C79;;
+}
+.order{
+    color: white
+}
+.carbon{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+text-align: left;
+color: #1C887B;
+}
+.card-body{
+    border: none;
+    align-items: center;
+}
+.col{
+    border: none;
+}
+.card{
+    background: #ECF4FF;
+    border: none;
+   
+    
+}
+.owner{
+    text-align: left;
+    border: #1C887B;
+    border-color: #1C887B;
+}
+
+.quantity{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+text-align: right;
+
+color: #1C887B;
+}
+.price{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 36px;
+color: #1C887B;
+}
+.howtopay{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 36px;
+
+
+color: #1C887B;
+}
+.pricebaht{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+
+color: #1C887B;
+}
+.create{
+    align-items: center;
+      width: 150px;
+      height: 50px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 36px;
+      text-align: center;
+      color: #000000;
+      border-radius: 30px;
+      border-color: #1C887B;
+      align-items: center;
+}
+.class1{
+    justify-content: left;
+    border-radius: 20px;
+    border-color: #1C887B;
+}
+.container-fluid{
+    background-color: #FFFFFF;
+    
+
+}
+.class{
+    align-items: right;
+    align-content: right;
+    border-radius: 20px;
+}
+.price1{
+    justify-content: space-between;
+}
+hr{
+    background-color: green;
+            width: 20%;
+            height: 5px;
+            border-top: 5px ;
+            line-height: 80%;
+}
+.howtopay{
+    justify-content: space-between;
+}

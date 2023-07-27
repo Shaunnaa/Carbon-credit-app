@@ -1,13 +1,124 @@
+.container{
+    height: 100vh;
+    
+    align-items: center;
+    justify-content: center;
+   
+ }
 body{
-    
-background: #1C887B;
+    background-color: #1C887B;
 }
-.profile{
+.div{
+    display: flex;
+}
+.circle{
+
+    align-items: center !important;
+    width: 82px;
+    height: 82px;
+    left: 715px;
+    top: 158px;
+    border-radius: 90px;
+    background: #ECF4FF;
+
+}
+.card{
     
-background: #ECF4FF;
-border-radius: 50px;
-width: 1232px;
-height: 500px;
-left: 140px;
-top: 188px;
+    background: #ECF4FF;
+    border-radius: 50px;
+
+}
+
+.amount-lg{
+    height: 50px;
+    width: 350px;
+    background: #FFFFFF;
+    border: 2px solid #1C887B;
+    border-radius: 20px;
+}
+
+.img{
+    align-items: center;
+}
+.connect-text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: left;
+}
+
+.cost{
+    height: 50px;
+    width: 350px;
+    background: #FFFFFF;
+    border: 2px solid #1C887B;
+    border-radius: 20px;
+}
+
+.box{
+    border: 60px;
+    background-color:rgb(19, 80, 80);}
+
+
+.btn{
+    background: #1C887B;
+    border-radius: 15px;
+}
+.wrapper{
+    height: 100px;
+    width:100px;
+    position: relative;
+    border: 5px solid ;
+    border-radius:50%;
+    background: url('./photo/Profile.png');
+    background-size: 100% 100%;
+    margin: 100px auto;
+    overflow: hidden;
+}
+.myfile{
+    position: absolute;
+    bottom: 0;
+    outline: none;
+    color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 120px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.myfile::-webkit-file-upload-button{
+    visibility: hidden;
+}
+.myfile::before{
+    content:'f030';
+    font-family: fontAwesome;
+    font-size: 50px;
+}
+
+.input-group{
+    font-style: normal;
+font-weight: 40;
+font-size: 20px;
+line-height: 48px;
+
+border-radius: 20px;
+    background: #FFFFFF;
+    border: 2px solid #1C887B;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.f{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 40;
+font-size: 20px;
+line-height: 48px;
+text-align: center;
+border-radius: 20px;
+color: #FFFFFF;
+background-color:#1C887B ;
+
+    
 }

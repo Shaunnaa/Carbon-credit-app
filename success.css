@@ -11,7 +11,7 @@ font-style: normal;
 font-weight: 600;
 font-size: 30px;
 line-height: 36px;
-text-align: center;
+text-align: left;
 
 color: #1C887B;
 }
@@ -40,7 +40,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 20px;
 line-height: 30px;
-
+text-align: left;
 color: #1C887B;
 }
 .card-body{
@@ -110,4 +110,12 @@ color: #1C887B;
 }
 .class1{
     align-items: end;
+}
+.container1-fluid{
+    background-color: #FFFFFF;
+   
+
+}
+.price1{
+    justify-content: space-between;
 }

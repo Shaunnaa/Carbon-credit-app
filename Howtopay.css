@@ -1,7 +1,4 @@
-.card{
-    border: 20px;
-    border-radius: 2rem; 
-    background-color: #ECF4FF;}
+
 .box{
     border: 60px;
     background-color:rgb(19, 80, 80);}
@@ -37,4 +34,23 @@ font-weight: 200;
 font-size: 15px;
 line-height: 20px;
 text-align: center;
+}
+.tell{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 48px;
+text-align: center;
+
+color: #000000;
+}
+.card{
+    background: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+}
+.card1{
+    background: #ECF4FF;
+border-radius: 50px;
 }

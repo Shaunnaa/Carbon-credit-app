@@ -108,3 +108,13 @@ color: #1C887B;
     border-color: #1C887B;
     align-items: center;
 }
+
+.group14{
+    align-items: center !important; 
+    justify-items: center;
+}
+.img{
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+}

@@ -13,7 +13,7 @@ app = APIRouter(
 )
 
 @app.put("/order/new_order", status_code=200)
-async def order_happend(sent_id: int, recive_id: int, amount_cc: str, user: _schemas.User = _fastapi.Depends(_services.get_current_user), db: _orm.Session = _fastapi.Depends(_services.get_db)):
+async def order_happend(sent_id: int, recive_id: int, amount_cc: str, user: _schemas.User = _fastapi.Depends(_services.get_current_user), db: _orm.Session = _fastapi.Depends(_services.get_db),):
      await _services.sent_cc(sent_id,amount_cc,user,db)
      await _services.recive_cc(recive_id,amount_cc,user,db)
      return "complete tranfers"

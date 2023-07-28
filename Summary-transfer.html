@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Summary-transfer.css">
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div id="navbarContainer"></div> <!--Link Navbar.html-->
+    <div class="container justify-content-center align-items-center">
+        <h1 class="order text-center mt-5 mb-5">โอนสินค้า</h1>
+        <div class="card py-5 px-3">
+            
+                <div class="row">
+                <div class="col-sm">
+                    <div class="col-sm-20 card py-5 px-3">
+                        <h5 class="customer-personal text-center mb-5">ข้อมูลลูกค้า</h5>
+                        <div class="card">
+                            
+                        <h5 class="name">ชื่อผู้โอน</h5>
+                        <input type="text" class="name-input" placeholder="Name Lastname                                              ID: xxxxx" >
+                        <br>
+                        <img src="./photo/Group 14.png" class="group14 " style="width: 55px; height: 143;" alt="group14">
+                        <br>
+                        <h5 class="email">ชื่อผู้รับ</h5>
+                        <input type="name" class="email-input" placeholder="Name Lastname" >
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="col-sm-20 card py-5 px-3">
+                        <h5 class="customer-personal text-center mb-3">รายการสินค้า</h5>
+                        <h5 class="quantity text-right mb-3">จำนวน (kg CO2e)</h5>
+                        
+                        <h5 class="carbon text-left mb-2">โอน Carbon Credit</h5>
+                        <hr class="hr hr-blurry" />
+                        <div class="price1 d-flex">
+                            <h5 class="price text-left">คงเหลือ</h5>
+                            <h5 class="price text-right">XXX</h5>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="d-grid gap-2 col-2 mt-4 mx-auto">
+                <a  href="success-tran.html" class="btn btn-success" type="submit">ยืนยัน</a>
+              </div>
+        </div>
+    </div>
+    
+</body>
+
+    <!--Link Navbar.html-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#navbarContainer').load('../Shop/Navbar.html');
+    });
+    </script>
+    <!--End_Link Navbar.html-->
+
+</html>

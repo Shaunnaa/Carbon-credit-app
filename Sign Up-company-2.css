@@ -101,3 +101,10 @@ body{
     text-align: center;
     color: #3D6A8C;
 }
+
+.btn{
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

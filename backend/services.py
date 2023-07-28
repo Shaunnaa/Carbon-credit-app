@@ -137,7 +137,7 @@ async def get_carbon_cc(user: _schemas.User, db: _orm.Session):
     return leads
 
 async def get_carbon_cc_id(id: int,user: _schemas.User, db: _orm.Session):
-    leads = db.query(_models.Carbon_CC).filter_by(owner_id=user.id).filter(_models.Carbon_CC.id == id).first()
+    leads = db.query(_models.Carbon_CC).filter(_models.Carbon_CC.id == id).first()
 
     return leads
 
@@ -149,6 +149,7 @@ async def update_carbon(amount: str, user: _schemas.User, db: _orm.Session):
 
     db.commit()
     db.refresh(cc)
+    # return "complete"
     return _schemas.Carbon_CC.from_orm(cc)
 
 async def update_carbon_id(id: int, amount: str, user: _schemas.User, db: _orm.Session):
@@ -159,7 +160,8 @@ async def update_carbon_id(id: int, amount: str, user: _schemas.User, db: _orm.S
 
     db.commit()
     db.refresh(cc)
-    return _schemas.Carbon_CC.from_orm(cc)
+    return "complete"
+    # return _schemas.Carbon_CC.from_orm(cc)
 
 async def delete_address(user: _schemas.User, db: _orm.Session):
     add_db = await get_adderss(user, db)
@@ -196,9 +198,9 @@ async def sent_cc(sent_id: int,amount: str, user: _schemas.User, db: _orm.Sessio
 async def recive_cc(recive_id: int,amount: str, user: _schemas.User, db: _orm.Session):
     amount_cc = await get_carbon_cc_id(recive_id,user,db)  
     now_cc = float(amount_cc.carbon_cc)
-    cut_cc = float(amount)
+    add_cc = float(amount)
 
-    update_cc = now_cc - cut_cc
+    update_cc = now_cc + add_cc
 
     update_cc = str(update_cc)
     await update_carbon_id(recive_id,update_cc,user,db)   

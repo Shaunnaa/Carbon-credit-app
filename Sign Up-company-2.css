@@ -29,7 +29,9 @@ body{
 
 
 .baan{
-    height: 40px;
+    text-align: center;
+    width: 500px;
+    height: 200px;
     background: #FFFFFF;
     border: 2px solid #1C887B;
     border-radius: 20px !important;

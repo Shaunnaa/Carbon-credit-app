@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import Buypage from './Buypage';
-import './buypage.css';
-import './App.css';
+import Login from './login';
 function App() {
   return (
     <>
-    <Buypage></Buypage>
+    <Login/>
     </>
+    
   );
 }
 

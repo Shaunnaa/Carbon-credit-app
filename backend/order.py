@@ -26,3 +26,8 @@ async def create_history(histoty: _schemas.HistoryCreate, user: _schemas.User = 
 @app.get("/history", response_model=list[_schemas.History])
 async def get_history(user: _schemas.User = _fastapi.Depends(_services.get_current_user), db: _orm.Session = _fastapi.Depends(_services.get_db)):
      return await _services.get_history(user=user, db=db)
+
+@app.delete("/delete_history")
+async def delete_history(id: int ,user: _schemas.User = _fastapi.Depends(_services.get_current_user), db: _orm.Session = _fastapi.Depends(_services.get_db)):
+    await _services.history(id ,user, db)
+    return {"message", "Successfully Deleted"}

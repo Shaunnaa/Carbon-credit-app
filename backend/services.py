@@ -74,6 +74,11 @@ async def get_current_user(
 
 
 async def create_information(user: _schemas.User, db: _orm.Session, information: _schemas.InformationCreate):
+    info = await get_information(user,db)
+    
+    if (info):
+        return "already have account"
+    
     information = _models.Information(**information.dict(), owner_id=user.id)
     db.add(information)
     db.commit()
@@ -175,14 +180,14 @@ async def delete_information(user: _schemas.User, db: _orm.Session):
 
     db.delete(infor_db)
     db.refresh(infor_db)
-    # return _schemas.Information.from_orm(infor_db)
+    return _schemas.Information.from_orm(infor_db)
 
 async def delete_carbon_cc(id: int, user: _schemas.User, db: _orm.Session):
     cc_db = await get_carbon_cc_id(id,user, db)
 
     db.delete(cc_db)
     db.refresh(cc_db)
-    # return _schemas.Carbon_CC.from_orm(cc_db)
+    return _schemas.Carbon_CC.from_orm(cc_db)
 
 async def sent_cc(sent_id: int,amount: str, user: _schemas.User, db: _orm.Session):
     amount_cc = await get_carbon_cc_id(sent_id,user,db)  
@@ -218,3 +223,15 @@ async def get_history(user: _schemas.User, db: _orm.Session):
     leads = db.query(_models.History).filter_by(owner_id=user.id)
     # return leads
     return list(map(_schemas.History.from_orm, leads))
+
+async def get_history_id(id: int, user: _schemas.User, db: _orm.Session):
+    leads = db.query(_models.History).filter_by(owner_id=user.id).filter(_models.History.id == id).first()
+    return leads
+    # return list(map(_schemas.History.from_orm, leads))
+
+async def delete_history(id: int, user: _schemas.User, db: _orm.Session):
+    cc_db = await get_history_id(id,user, db)
+
+    db.delete(cc_db)
+    db.refresh(cc_db)
+    return _schemas.History.from_orm(cc_db)

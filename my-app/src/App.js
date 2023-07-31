@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import Buypage from './Buypage';
 import './buypage.css';
 import Login from './login';

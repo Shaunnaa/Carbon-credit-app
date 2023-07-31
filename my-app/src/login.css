@@ -1,6 +1,6 @@
 body{
-    background-color: #ECF4FF;
-    margin: 0px;
+    background-color: #87B3DA;
+    margin: 0px !important;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -14,7 +14,6 @@ body{
 }
 
 .text-center{
-    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -23,14 +22,16 @@ body{
     text-align: center;
     color: #000000;
 }
-.input-group-lg {
-    padding-top: 27px;
-    padding-bottom: 27px;
+.form-floating {
+    align-items: center;
+    justify-items: center;
     
 }
 .email{
-    box-sizing: border-box;
+    align-items: center;
+    justify-items: center;
     height: 50px;
+    width: 200px;
     background: #FFFFFF;
     border: 2px solid #1C887B;
     border-radius: 20px !important;
@@ -41,10 +42,10 @@ body{
 
 
 .tel{
+    align-items: center;
+    justify-items: center;
     height: 50px;
-    left: 474px;
-    top: 561px;
-    box-sizing: border-box;
+    width: 200px;
     background: #FFFFFF;
     border: 2px solid #1C887B;
     border-radius: 20px !important;
@@ -89,4 +90,8 @@ body{
     }
   }
 
-
+.input-group{
+    align-items: center;
+    justify-items: center;
+    gap: 0.5rem;
+}

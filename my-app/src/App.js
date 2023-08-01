@@ -2,8 +2,8 @@
 
 
 
-import './SignUp-company-1.css';
-import Signupcom1 from './signupcom1';
+import './SignUp-company-2.css';
+import Signupcom2 from './signup-com2';
 
 
 import './buypage.css';
@@ -12,14 +12,14 @@ import './buypage.css';
 import './App.css';
 
 
-import Login from './login';
-import {Browser, Route,Switch,Redirect} from "react-router-dom"
+//import Login from './login';
+//import {Browser, Route,Switch,Redirect} from "react-router-dom"
 import './login.css'
 function App() {
   return (
 
     <>
-    <Signupcom1/>
+    <Signupcom2/>
     </>
     
 

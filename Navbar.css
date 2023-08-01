@@ -24,7 +24,7 @@ ul{
     list-style-type:none;
 }
 
-.card-body {
+#CD{
     border-radius: 20px;
     border: 2px solid #1C887B !important;
 }

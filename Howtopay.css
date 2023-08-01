@@ -1,56 +1,61 @@
 
 .box{
     border: 60px;
-    background-color:rgb(19, 80, 80);}
-body{
-    margin-top: 3rem;
-    background-color: #87B3DA;
+    background-color:rgb(19, 80, 80);
 }
+body{
+    background-color: #87B3DA !important;
+}
+
 .bi{
     margin-right: 1rem;
     size: 20px;
 }
 .connect-text{
     font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 25px;
-line-height: 48px;
-text-align: center;}
-.name{
-    
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 40px;
-line-height: 77px;
-text-align: center;
-color:white ;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.name{  
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 77px;
+    text-align: center;
+    color:white ;
 }
 .connect-text2{
     font-family: 'Inter';
-font-style: normal;
-font-weight: 200;
-font-size: 15px;
-line-height: 20px;
-text-align: center;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
 }
 .tell{
     font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 30px;
-line-height: 48px;
-text-align: center;
-
-color: #000000;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 48px;
+    text-align: center;
+    color: #000000;
 }
 .card{
-    background: #FFFFFF;
-    border: none;
-    border-radius: 20px;
+    background: #FFFFFF !important;
+    border: none !important;
+    border-radius: 20px !important;
 }
 .card1{
-    background: #ECF4FF;
-border-radius: 50px;
+    background: #ECF4FF !important;
+    border-radius: 50px !important;
+}
+.card-body{
+    border: none !important;
+    border: 2px solid #ffffff !important;
 }

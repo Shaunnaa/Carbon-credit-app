@@ -8,6 +8,8 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
+
+
 app = _fastapi.FastAPI()
 
 app = APIRouter(
@@ -19,8 +21,10 @@ app = APIRouter(
 
 @app.post("/api/users")
 async def create_user(
-    user: _schemas.UserCreate, db: _orm.Session = _fastapi.Depends(_services.get_db)
+    user: _schemas.UserCreate, db: _orm.Session = _fastapi.Depends(_services.get_db),email: str = _fastapi.Form(...), password: str = _fastapi.Form(...)
 ):
+    user.email = email
+    user.hashed_password = password
     db_user = await _services.get_user_by_email(user.email, db)
     if db_user:
         raise _fastapi.HTTPException(status_code=400, detail="Email already in use")
@@ -30,7 +34,9 @@ async def create_user(
     return await _services.create_token(user)
 
 @app.post("/api/token")
-async def generate_token(form_data: _security.OAuth2PasswordRequestForm = _fastapi.Depends(), db: _orm.Session = _fastapi.Depends(_services.get_db)):
+async def generate_token(form_data: _security.OAuth2PasswordRequestForm = _fastapi.Depends(), db: _orm.Session = _fastapi.Depends(_services.get_db),username: str = _fastapi.Form(...) , password: str = _fastapi.Form(...)):
+    form_data.username = username
+    form_data.password = password
     user = await _services.authenticate_user(form_data.username, form_data.password, db)
     if not user:
         raise _fastapi.HTTPException(status_code=401,detail="Invalid Credentials")
@@ -43,8 +49,11 @@ async def get_user(user: _schemas.User = _fastapi.Depends(_services.get_current_
 
 @app.post("/api/information", response_model=_schemas.Information)
 async def create_information(
-        information: _schemas.InformationCreate, user: _schemas.User = _fastapi.Depends(_services.get_current_user), db: _orm.Session = _fastapi.Depends(_services.get_db)
+        information: _schemas.InformationCreate, user: _schemas.User = _fastapi.Depends(_services.get_current_user), db: _orm.Session = _fastapi.Depends(_services.get_db),name: str = _fastapi.Form(...),phone: str = _fastapi.Form(...)
 ):
+    information.name = name
+    information.phone = phone
+    information.type_acc = "none"
     return await _services.create_information(user=user, db=db, information=information)
 
 @app.get("/api/information", status_code=200) 
@@ -52,19 +61,22 @@ async def get_information(user: _schemas.User = _fastapi.Depends(_services.get_c
     return await _services.get_information(user=user, db=db)
 
 @app.put("/api/update_information", status_code=200)
-async def update_information(information: _schemas.InformationCreate, user: _schemas.User = _fastapi.Depends(_services.get_current_user), db: _orm.Session = _fastapi.Depends(_services.get_db)):
+async def update_information(information: _schemas.InformationCreate, user: _schemas.User = _fastapi.Depends(_services.get_current_user), db: _orm.Session = _fastapi.Depends(_services.get_db),name: str = _fastapi.Form(...),phone: str = _fastapi.Form(...)):
+    information.name = name
+    information.phone = phone
     await _services.update_information(information, user, db)
     return {"message", "Successfully Updated"}
 
 @app.put("/api/update_type", status_code=200)
-async def update_type(typy: str, user: _schemas.User = _fastapi.Depends(_services.get_current_user), db: _orm.Session = _fastapi.Depends(_services.get_db)):
-    await _services.update_type(typy, user, db)
+async def update_type( user: _schemas.User = _fastapi.Depends(_services.get_current_user), db: _orm.Session = _fastapi.Depends(_services.get_db), type: str = _fastapi.Form(...)):
+    await _services.update_type(type, user, db)
     return {"message", "Successfully Updated"}
 
 @app.post("/api/carbon_cc", response_model=_schemas.Carbon_CC)
 async def create_carbon_cc(
         carbon_cc: _schemas.Carboon_CCCreate, user: _schemas.User = _fastapi.Depends(_services.get_current_user), db: _orm.Session = _fastapi.Depends(_services.get_db)
 ):
+    carbon_cc.carbon_cc = "0"
     return await _services.create_carbon_cc(user=user, db=db, carbon_cc=carbon_cc)
 
 @app.get("/api/get_now_cc", status_code=200)

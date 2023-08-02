@@ -6,6 +6,7 @@
     border: 60px;
     background-color:rgb(19, 80, 80);}
 body{
+    margin-top: 3rem;
     background-color: #87B3DA;
 }
 .bi{
@@ -28,7 +29,6 @@ font-size: 40px;
 line-height: 77px;
 text-align: center;
 color:white ;
-margin-top: 3rem;
 }
 .connect-text2{
     font-family: 'Inter';

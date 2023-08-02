@@ -21,10 +21,9 @@ app = APIRouter(
 
 @app.post("/api/users")
 async def create_user(
-    user: _schemas.UserCreate, db: _orm.Session = _fastapi.Depends(_services.get_db),email: str = _fastapi.Form(...), password: str = _fastapi.Form(...)
+    user: _schemas.UserCreate, db: _orm.Session = _fastapi.Depends(_services.get_db)
 ):
-    user.email = email
-    user.hashed_password = password
+  
     db_user = await _services.get_user_by_email(user.email, db)
     if db_user:
         raise _fastapi.HTTPException(status_code=400, detail="Email already in use")
@@ -47,11 +46,8 @@ async def get_user(user: _schemas.User = _fastapi.Depends(_services.get_current_
 
 @app.post("/api/information", response_model=_schemas.Information)
 async def create_information(
-        information: _schemas.InformationCreate, user: _schemas.User = _fastapi.Depends(_services.get_current_user), db: _orm.Session = _fastapi.Depends(_services.get_db),name: str = _fastapi.Form(...),phone: str = _fastapi.Form(...)
+        information: _schemas.InformationCreate, user: _schemas.User = _fastapi.Depends(_services.get_current_user), db: _orm.Session = _fastapi.Depends(_services.get_db)
 ):
-    information.name = name
-    information.phone = phone
-    information.type_acc = "none"
     return await _services.create_information(user=user, db=db, information=information)
 
 @app.get("/api/information", status_code=200) 
@@ -59,14 +55,12 @@ async def get_information(user: _schemas.User = _fastapi.Depends(_services.get_c
     return await _services.get_information(user=user, db=db)
 
 @app.put("/api/update_information", status_code=200)
-async def update_information(information: _schemas.InformationCreate, user: _schemas.User = _fastapi.Depends(_services.get_current_user), db: _orm.Session = _fastapi.Depends(_services.get_db),name: str = _fastapi.Form(...),phone: str = _fastapi.Form(...)):
-    information.name = name
-    information.phone = phone
+async def update_information(information: _schemas.InformationCreate, user: _schemas.User = _fastapi.Depends(_services.get_current_user), db: _orm.Session = _fastapi.Depends(_services.get_db)):
     await _services.update_information(information, user, db)
     return {"message", "Successfully Updated"}
 
 @app.put("/api/update_type", status_code=200)
-async def update_type( user: _schemas.User = _fastapi.Depends(_services.get_current_user), db: _orm.Session = _fastapi.Depends(_services.get_db), type: str = _fastapi.Form(...)):
+async def update_type( type: str, user: _schemas.User = _fastapi.Depends(_services.get_current_user), db: _orm.Session = _fastapi.Depends(_services.get_db)):
     await _services.update_type(type, user, db)
     return {"message", "Successfully Updated"}
 

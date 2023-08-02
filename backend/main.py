@@ -38,11 +38,24 @@
 # async def read_root(request: Request):
 #     return templates.TemplateResponse("test.html", {"request": request})
 
-from fastapi import FastAPI
+
 import login_register
 import order
+from fastapi import FastAPI, Depends, HTTPException, Form, status
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from pydantic import BaseModel
 
 app = FastAPI()
+
+# Add CORS Middleware to allow requests from all origins. Adjust the list of allowed origins according to your needs.
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 app.include_router(login_register.app)

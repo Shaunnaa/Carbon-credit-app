@@ -1,0 +1,93 @@
+@media only screen and (max-width: 500px) {
+    #Create_Name{
+        font-size: 45px !important;
+    } 
+}
+
+body{
+    background-color: #ECF4FF;
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    border: none;
+    width: 500px;
+    background-color: #ECF4FF;
+}
+
+.text-center{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 61px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 15px;
+}
+.input-group-lg {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    
+}
+.username{
+    box-sizing: border-box;
+    height: 50px;
+    background: #FFFFFF;
+    border: 2px solid #1C887B;
+    border-radius: 20px !important;
+    text-align: left;
+    text-decoration-color: #365E7D;
+}
+
+.email{
+    height: 50px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 2px solid #1C887B;
+    border-radius: 20px !important;
+    text-decoration-color: #365E7D;
+}
+
+.tel{
+    height: 50px;
+    left: 474px;
+    top: 561px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 2px solid #1C887B;
+    border-radius: 20px !important;
+    text-decoration-color: #365E7D;
+}
+
+.next{
+
+    background-color: #ECF4FF;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    width: 200px;
+    text-align: center;
+    align-items: center;
+    color: #1C887B;
+    margin: 0 auto;
+    display: block;
+}
+
+.help2{
+    padding-top: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #3D6A8C;
+}

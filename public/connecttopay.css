@@ -1,40 +1,39 @@
 .card{
-    border: 20px;
-    border-radius: 2rem; 
-    background-color: #ECF4FF;}
+    border: 20px !important ;
+    border-radius: 2rem !important; 
+    background-color: #ECF4FF !important;}
 .box{
-    border: 60px;
-    background-color:rgb(19, 80, 80);}
+    border: 60px !important;
+    background-color:rgb(19, 80, 80) !important;}
 body{
-    margin-top: 3rem;
-    background-color: #87B3DA;
+    background-color: #87B3DA !important;
 }
 .bi{
-    margin-right: 1rem;
-    size: 20px;
+    margin-right: 1rem !important;
+    size: 20px !important;
 }
 .connect-text{
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 25px;
-line-height: 48px;
-text-align: center;}
+    font-family: 'Inter' !important;
+font-style: normal !important;
+font-weight: 600 !important;
+font-size: 25px!important;
+line-height: 48px !important;
+text-align: center!important; }
 .name{
     
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 40px;
-line-height: 77px;
-text-align: center;
-color:white ;
+font-family: 'Inter' !important;
+font-style: normal !important;
+font-weight: 500 !important;
+font-size: 40px !important;
+line-height: 77px !important;
+text-align: center !important;
+color:white !important;
 }
 .connect-text2{
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 200;
-font-size: 15px;
-line-height: 20px;
-text-align: center;
+    font-family: 'Inter' !important;
+font-style: normal !important;
+font-weight: 200 !important;
+font-size: 15px !important;
+line-height: 20px !important;
+text-align: center !important;
 }

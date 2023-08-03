@@ -91,3 +91,9 @@ body{
     text-align: center;
     color: #3D6A8C;
 }
+
+.btn{
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+}

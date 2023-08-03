@@ -1,12 +1,12 @@
 .container{
     height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #87B3DA;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: #87B3DA !important;
  }
 body{
-    background-color: #87B3DA;
+    background-color: #87B3DA !important;
 }
 .div{
     display: flex;
@@ -24,7 +24,7 @@ body{
 }
 .card{
     
-    background: #ECF4FF;
+    background: #ECF4FF !important;
     border-radius: 50px;
 
 }

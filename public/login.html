@@ -22,17 +22,21 @@
 
             <div class="input-group d-flex flex-column mt-2 gap-4 mb-4">
                 <div class="form-floating">
-                    <input type="email" class="email form-control" id="floatingInputGrid" placeholder="name@example.com">
+                    <input type="email" class="email form-control" id="InputemailGrid" placeholder="name@example.com">
                     <label for="floatingInputGrid">อีเมล</label>
                   </div>
                   <div class="form-floating">
-                    <input type="password" class="tel form-control" id="floatingInputGrid" placeholder="name@example.com">
+                    <input type="password" class="tel form-control" id="InputpassGrid" placeholder="name@example.com">
                     <label for="floatingInputGrid">รหัสผ่าน</label>
                   </div>
                 
+                  <button class="next " onclick="location.href='Sign Up-company-2.html'" id="login">เข้าสู่ระบบ</button>
             </div>
             
+<<<<<<< HEAD
             <button class="next " onclick="location.href='Home.html'">เข้าสู่ระบบ</button>
+=======
+>>>>>>> 2e03caa36b06e88e35b273f35f690763f1dfcfb1
             <button class="f text-center">จำรหัสผ่านไม่ได้</button>
             
             </div>
@@ -44,7 +48,36 @@
                 <img class="img" src="./photo/tree.png" >
             </div >
     </section>
-    
+    <script>
+        const login = document.getElementById("login")
+        const usernameInput = document.getElementById('InputemailGrid');
+        const passwordInput = document.getElementById('InputpassGrid');
+        const submitLogin = async () => {
+            email = usernameInput.value;
+            password = passwordInput.value;
+            const requestOptions = {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: JSON.stringify(
+                `grant_type=&username=${email}&password=${password}&scope=&client_id=&client_secret=`
+            ),
+            };
+
+            const response = await fetch("/login_register/api/token", requestOptions);
+            const data = await response.json();
+
+            if (!response.ok) {
+            setErrorMessage(data.detail);
+            } else {
+            setToken(data.access_token);
+            }
+        };
+        
+        login.addEventListener('click', () => {
+           submitLogin();
+   
+        });
+    </script>
 </body>
 </html>
 <!--<section>

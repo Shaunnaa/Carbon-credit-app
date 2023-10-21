@@ -1,3 +1,3 @@
 # Carbon-credit-app
-Demo website
+Demo Web
 https://carbon-credit-app.web.app/
